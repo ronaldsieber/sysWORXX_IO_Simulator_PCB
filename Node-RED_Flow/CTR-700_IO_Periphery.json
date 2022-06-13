@@ -1,0 +1,1081 @@
+[
+    {
+        "id": "c9197213.ff4b1",
+        "type": "tab",
+        "label": "CTR-700 Digital In/Out",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "ba490f63.7b55d8",
+        "type": "tab",
+        "label": "CTR-700 Analog In",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "5c759330.d3c6e4",
+        "type": "tab",
+        "label": "CTR-700 A/B Encoder",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "de664321.5be7f8",
+        "type": "ui_group",
+        "z": "",
+        "name": "Analog Channels",
+        "tab": "136120e1.087d9f",
+        "order": 2,
+        "disp": true,
+        "width": "16",
+        "collapse": false
+    },
+    {
+        "id": "9aa73ddc.99b87",
+        "type": "ui_group",
+        "z": "",
+        "name": "Digital Channels",
+        "tab": "136120e1.087d9f",
+        "order": 1,
+        "disp": true,
+        "width": "16",
+        "collapse": false
+    },
+    {
+        "id": "ff8c28a2.91ad2",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "487470c6.ca6f2",
+        "type": "ui_group",
+        "z": "",
+        "name": "A/B Encoder",
+        "tab": "136120e1.087d9f",
+        "order": 3,
+        "disp": true,
+        "width": "16",
+        "collapse": false
+    },
+    {
+        "id": "136120e1.087d9f",
+        "type": "ui_tab",
+        "z": "",
+        "name": "CTR-700 IO Periphery",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "bfdeb810.c6c6c",
+        "type": "ctr700_di",
+        "z": "c9197213.ff4b1",
+        "name": "CTR-700 DI0",
+        "channel": "IN_DI0",
+        "edge": "EDGE_BOTH",
+        "acttype": "num",
+        "actdata": "1",
+        "inacttype": "num",
+        "inactdata": "0",
+        "optalttopic": false,
+        "alttopic": "/di/0",
+        "x": 170,
+        "y": 100,
+        "wires": [
+            [
+                "d8a8c1d8.530cd8"
+            ]
+        ]
+    },
+    {
+        "id": "df573a9d.3a6f38",
+        "type": "ctr700_di",
+        "z": "c9197213.ff4b1",
+        "name": "CTR-700 DI1",
+        "channel": "IN_DI1",
+        "edge": "EDGE_BOTH",
+        "acttype": "num",
+        "actdata": "1",
+        "inacttype": "num",
+        "inactdata": "0",
+        "optalttopic": false,
+        "alttopic": "/di/1",
+        "x": 170,
+        "y": 240,
+        "wires": [
+            [
+                "38e34549.6b28fa"
+            ]
+        ]
+    },
+    {
+        "id": "176c29e7.e319f6",
+        "type": "ctr700_di",
+        "z": "c9197213.ff4b1",
+        "name": "CTR-700 DI2",
+        "channel": "IN_DI2",
+        "edge": "EDGE_BOTH",
+        "acttype": "num",
+        "actdata": "1",
+        "inacttype": "num",
+        "inactdata": "0",
+        "optalttopic": false,
+        "alttopic": "/di/2",
+        "x": 170,
+        "y": 380,
+        "wires": [
+            [
+                "3813c6de.fb50a2"
+            ]
+        ]
+    },
+    {
+        "id": "68a8b5db.445ba4",
+        "type": "ctr700_di",
+        "z": "c9197213.ff4b1",
+        "name": "CTR-700 DI3",
+        "channel": "IN_DI3",
+        "edge": "EDGE_BOTH",
+        "acttype": "num",
+        "actdata": "1",
+        "inacttype": "num",
+        "inactdata": "0",
+        "optalttopic": false,
+        "alttopic": "/di/3",
+        "x": 170,
+        "y": 520,
+        "wires": [
+            [
+                "82451f8d.b9d718"
+            ]
+        ]
+    },
+    {
+        "id": "458bcb97.99a89c",
+        "type": "ctr700_do",
+        "z": "c9197213.ff4b1",
+        "name": "CTR-700 DO0",
+        "channel": "OUT_DO0",
+        "initstate": "INIT_STATE_INACTIVE",
+        "acttype": "num",
+        "actdata": "1",
+        "inacttype": "num",
+        "inactdata": "0",
+        "optalttopic": true,
+        "alttopic": "#",
+        "x": 640,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "c9e56929.5b5b18",
+        "type": "ctr700_do",
+        "z": "c9197213.ff4b1",
+        "name": "CTR-700 DO1",
+        "channel": "OUT_DO1",
+        "initstate": "INIT_STATE_INACTIVE",
+        "acttype": "num",
+        "actdata": "1",
+        "inacttype": "num",
+        "inactdata": "0",
+        "optalttopic": true,
+        "alttopic": "#",
+        "x": 640,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "3e8ba368.99762c",
+        "type": "ctr700_do",
+        "z": "c9197213.ff4b1",
+        "name": "CTR-700 DO2",
+        "channel": "OUT_DO2",
+        "initstate": "INIT_STATE_INACTIVE",
+        "acttype": "num",
+        "actdata": "1",
+        "inacttype": "num",
+        "inactdata": "0",
+        "optalttopic": true,
+        "alttopic": "#",
+        "x": 640,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "e06df976.0c07b8",
+        "type": "ctr700_do",
+        "z": "c9197213.ff4b1",
+        "name": "CTR-700 DO3",
+        "channel": "OUT_DO3",
+        "initstate": "INIT_STATE_INACTIVE",
+        "acttype": "num",
+        "actdata": "1",
+        "inacttype": "num",
+        "inactdata": "0",
+        "optalttopic": true,
+        "alttopic": "#",
+        "x": 640,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "38e34549.6b28fa",
+        "type": "ui_switch",
+        "z": "c9197213.ff4b1",
+        "name": "DI1 -> DO1",
+        "label": "DI1 -> DO1",
+        "tooltip": "",
+        "group": "9aa73ddc.99b87",
+        "order": 3,
+        "width": "4",
+        "height": "1",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "/di/1",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 390,
+        "y": 240,
+        "wires": [
+            [
+                "c9e56929.5b5b18",
+                "c9476d79.728de"
+            ]
+        ]
+    },
+    {
+        "id": "d8a8c1d8.530cd8",
+        "type": "ui_switch",
+        "z": "c9197213.ff4b1",
+        "name": "DI0 -> DO0",
+        "label": "DI0 -> DO0",
+        "tooltip": "",
+        "group": "9aa73ddc.99b87",
+        "order": 1,
+        "width": "4",
+        "height": "1",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "/di/0",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 390,
+        "y": 100,
+        "wires": [
+            [
+                "458bcb97.99a89c",
+                "c3a6b566.313cb8"
+            ]
+        ]
+    },
+    {
+        "id": "3813c6de.fb50a2",
+        "type": "ui_switch",
+        "z": "c9197213.ff4b1",
+        "name": "DI2 -> DO2",
+        "label": "DI2 -> DO2",
+        "tooltip": "",
+        "group": "9aa73ddc.99b87",
+        "order": 5,
+        "width": "4",
+        "height": "1",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "/di/2",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 390,
+        "y": 380,
+        "wires": [
+            [
+                "3e8ba368.99762c",
+                "9aa70921.137d48"
+            ]
+        ]
+    },
+    {
+        "id": "82451f8d.b9d718",
+        "type": "ui_switch",
+        "z": "c9197213.ff4b1",
+        "name": "DI3 -> DO3",
+        "label": "DI3 -> DO3",
+        "tooltip": "",
+        "group": "9aa73ddc.99b87",
+        "order": 7,
+        "width": "4",
+        "height": "1",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "/di/3",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 390,
+        "y": 520,
+        "wires": [
+            [
+                "e06df976.0c07b8",
+                "5e113a0d.99000c"
+            ]
+        ]
+    },
+    {
+        "id": "d095a87e.3f9d28",
+        "type": "ctr700_ai",
+        "z": "ba490f63.7b55d8",
+        "name": "CTR-700 AI0",
+        "channel": "IN_AI0",
+        "mode": "MODE_VOLTAGE",
+        "samplerate": "250",
+        "sampleunit": "SAMPLE_UNIT_MS",
+        "delta": "3",
+        "optunit1000": false,
+        "uppervaltype": "num",
+        "uppervaldata": "11.633",
+        "lowervaltype": "num",
+        "lowervaldata": "0",
+        "decplaces": "DECPLCE_1",
+        "optalttopic": false,
+        "alttopic": "/ai/0",
+        "x": 170,
+        "y": 100,
+        "wires": [
+            [
+                "14dc9e4.cba54e2",
+                "49af7e77.0a0718"
+            ]
+        ]
+    },
+    {
+        "id": "14dc9e4.cba54e2",
+        "type": "debug",
+        "z": "ba490f63.7b55d8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 430,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "f2a2f82f.f763d",
+        "type": "ctr700_ai",
+        "z": "ba490f63.7b55d8",
+        "name": "CTR-700 AI1",
+        "channel": "IN_AI1",
+        "mode": "MODE_VOLTAGE",
+        "samplerate": "250",
+        "sampleunit": "SAMPLE_UNIT_MS",
+        "delta": "3",
+        "optunit1000": false,
+        "uppervaltype": "num",
+        "uppervaldata": "11.633",
+        "lowervaltype": "num",
+        "lowervaldata": "0",
+        "decplaces": "DECPLCE_1",
+        "optalttopic": false,
+        "alttopic": "/ai/1",
+        "x": 170,
+        "y": 220,
+        "wires": [
+            [
+                "24200d0b.ba4712",
+                "97911fdf.374068"
+            ]
+        ]
+    },
+    {
+        "id": "24200d0b.ba4712",
+        "type": "debug",
+        "z": "ba490f63.7b55d8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 430,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "58763485.b9824c",
+        "type": "ctr700_ai",
+        "z": "ba490f63.7b55d8",
+        "name": "CTR-700 AI2",
+        "channel": "IN_AI2",
+        "mode": "MODE_VOLTAGE",
+        "samplerate": "250",
+        "sampleunit": "SAMPLE_UNIT_MS",
+        "delta": "3",
+        "optunit1000": false,
+        "uppervaltype": "num",
+        "uppervaldata": "11.633",
+        "lowervaltype": "num",
+        "lowervaldata": "0",
+        "decplaces": "DECPLCE_1",
+        "optalttopic": false,
+        "alttopic": "/ai/2",
+        "x": 170,
+        "y": 340,
+        "wires": [
+            [
+                "e464eba1.6c7698",
+                "1aad310.443a1cf"
+            ]
+        ]
+    },
+    {
+        "id": "8270fd38.046e28",
+        "type": "ctr700_ai",
+        "z": "ba490f63.7b55d8",
+        "name": "CTR-700 AI3",
+        "channel": "IN_AI3",
+        "mode": "MODE_VOLTAGE",
+        "samplerate": "250",
+        "sampleunit": "SAMPLE_UNIT_MS",
+        "delta": "3",
+        "optunit1000": false,
+        "uppervaltype": "num",
+        "uppervaldata": "11.633",
+        "lowervaltype": "num",
+        "lowervaldata": "0",
+        "decplaces": "DECPLCE_1",
+        "optalttopic": false,
+        "alttopic": "/ai/3",
+        "x": 170,
+        "y": 460,
+        "wires": [
+            [
+                "fd79de75.c26e8",
+                "770312e8.272abc"
+            ]
+        ]
+    },
+    {
+        "id": "e464eba1.6c7698",
+        "type": "debug",
+        "z": "ba490f63.7b55d8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 430,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "fd79de75.c26e8",
+        "type": "debug",
+        "z": "ba490f63.7b55d8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 430,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "49af7e77.0a0718",
+        "type": "ui_gauge",
+        "z": "ba490f63.7b55d8",
+        "name": "AI0",
+        "group": "de664321.5be7f8",
+        "order": 0,
+        "width": "4",
+        "height": "4",
+        "gtype": "gage",
+        "title": "AI0",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 610,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "97911fdf.374068",
+        "type": "ui_gauge",
+        "z": "ba490f63.7b55d8",
+        "name": "AI1",
+        "group": "de664321.5be7f8",
+        "order": 0,
+        "width": "4",
+        "height": "4",
+        "gtype": "gage",
+        "title": "AI1",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 610,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "1aad310.443a1cf",
+        "type": "ui_gauge",
+        "z": "ba490f63.7b55d8",
+        "name": "AI2",
+        "group": "de664321.5be7f8",
+        "order": 0,
+        "width": "4",
+        "height": "4",
+        "gtype": "gage",
+        "title": "OPT1 (AI2)",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 610,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "770312e8.272abc",
+        "type": "ui_gauge",
+        "z": "ba490f63.7b55d8",
+        "name": "AI3",
+        "group": "de664321.5be7f8",
+        "order": 0,
+        "width": "4",
+        "height": "4",
+        "gtype": "gage",
+        "title": "OPT2 (AI3)",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 610,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "c3a6b566.313cb8",
+        "type": "ui_led",
+        "z": "c9197213.ff4b1",
+        "order": 2,
+        "group": "9aa73ddc.99b87",
+        "width": "11",
+        "height": "1",
+        "label": "DO0",
+        "labelPlacement": "left",
+        "labelAlignment": "right",
+        "colorForValue": [
+            {
+                "color": "#808080",
+                "value": "0",
+                "valueType": "num"
+            },
+            {
+                "color": "#ff0000",
+                "value": "1",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "LED_DO0",
+        "x": 630,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "c9476d79.728de",
+        "type": "ui_led",
+        "z": "c9197213.ff4b1",
+        "order": 4,
+        "group": "9aa73ddc.99b87",
+        "width": "11",
+        "height": "1",
+        "label": "DO1",
+        "labelPlacement": "left",
+        "labelAlignment": "right",
+        "colorForValue": [
+            {
+                "color": "#808080",
+                "value": "0",
+                "valueType": "num"
+            },
+            {
+                "color": "#008000",
+                "value": "1",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "LED_DO1",
+        "x": 630,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "9aa70921.137d48",
+        "type": "ui_led",
+        "z": "c9197213.ff4b1",
+        "order": 6,
+        "group": "9aa73ddc.99b87",
+        "width": "11",
+        "height": "1",
+        "label": "DO2",
+        "labelPlacement": "left",
+        "labelAlignment": "right",
+        "colorForValue": [
+            {
+                "color": "#808080",
+                "value": "0",
+                "valueType": "num"
+            },
+            {
+                "color": "#f3d601",
+                "value": "1",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "LED_DO2",
+        "x": 630,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "5e113a0d.99000c",
+        "type": "ui_led",
+        "z": "c9197213.ff4b1",
+        "order": 8,
+        "group": "9aa73ddc.99b87",
+        "width": "11",
+        "height": "1",
+        "label": "DO3",
+        "labelPlacement": "left",
+        "labelAlignment": "right",
+        "colorForValue": [
+            {
+                "color": "#808080",
+                "value": "0",
+                "valueType": "num"
+            },
+            {
+                "color": "#0080ff",
+                "value": "1",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "LED_DO3",
+        "x": 630,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "f55ab59a.d834a",
+        "type": "file in",
+        "z": "5c759330.d3c6e4",
+        "name": "Read Value A/B-Encoder",
+        "filename": "/sys/devices/soc0/soc/30400000.aips-bus/30650000.flextimer/value",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "x": 470,
+        "y": 180,
+        "wires": [
+            [
+                "22ee8b56.cc1bfc",
+                "af04e96.cf22e18"
+            ]
+        ]
+    },
+    {
+        "id": "b9d98807.ded0b8",
+        "type": "inject",
+        "z": "5c759330.d3c6e4",
+        "name": "Value A/B-Encoder",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 200,
+        "y": 180,
+        "wires": [
+            [
+                "f55ab59a.d834a"
+            ]
+        ]
+    },
+    {
+        "id": "959e5b4f.9998b",
+        "type": "inject",
+        "z": "5c759330.d3c6e4",
+        "name": "Enbale A/B-Encoder",
+        "topic": "",
+        "payload": "1",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "x": 200,
+        "y": 100,
+        "wires": [
+            [
+                "e1652e6c.852cd8"
+            ]
+        ]
+    },
+    {
+        "id": "e1652e6c.852cd8",
+        "type": "file",
+        "z": "5c759330.d3c6e4",
+        "name": "Write Enable A/B-Encoder",
+        "filename": "/sys/devices/soc0/soc/30400000.aips-bus/30650000.flextimer/enable",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 480,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "22ee8b56.cc1bfc",
+        "type": "ui_gauge",
+        "z": "5c759330.d3c6e4",
+        "name": "Gauge A/B-Encoder",
+        "group": "487470c6.ca6f2",
+        "order": 4,
+        "width": "4",
+        "height": "4",
+        "gtype": "gage",
+        "title": "Counter Value",
+        "label": "",
+        "format": "{{value}}",
+        "min": "-300",
+        "max": "300",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 800,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "af04e96.cf22e18",
+        "type": "ui_chart",
+        "z": "5c759330.d3c6e4",
+        "name": "Chart A/B-Encoder",
+        "group": "487470c6.ca6f2",
+        "order": 1,
+        "width": "12",
+        "height": "5",
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "-300",
+        "ymax": "300",
+        "removeOlder": "1",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 790,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "32d39958.745b3e",
+        "type": "ctr700_di",
+        "z": "5c759330.d3c6e4",
+        "name": "CTR-700 DI14",
+        "channel": "IN_DI14",
+        "edge": "EDGE_BOTH",
+        "acttype": "num",
+        "actdata": "1",
+        "inacttype": "num",
+        "inactdata": "0",
+        "optalttopic": false,
+        "alttopic": "/di/14",
+        "x": 160,
+        "y": 320,
+        "wires": [
+            [
+                "ab117d17.63c26"
+            ]
+        ]
+    },
+    {
+        "id": "8345df7a.ba4708",
+        "type": "ctr700_di",
+        "z": "5c759330.d3c6e4",
+        "name": "CTR-700 DI15",
+        "channel": "IN_DI15",
+        "edge": "EDGE_BOTH",
+        "acttype": "num",
+        "actdata": "1",
+        "inacttype": "num",
+        "inactdata": "0",
+        "optalttopic": false,
+        "alttopic": "/di/15",
+        "x": 160,
+        "y": 400,
+        "wires": [
+            [
+                "e2672e17.dfc96"
+            ]
+        ]
+    },
+    {
+        "id": "ab117d17.63c26",
+        "type": "ui_led",
+        "z": "5c759330.d3c6e4",
+        "order": 2,
+        "group": "487470c6.ca6f2",
+        "width": "2",
+        "height": "1",
+        "label": "A DI14",
+        "labelPlacement": "right",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#808080",
+                "value": "0",
+                "valueType": "num"
+            },
+            {
+                "color": "#ff8000",
+                "value": "1",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "Signal A",
+        "x": 760,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "e2672e17.dfc96",
+        "type": "ui_led",
+        "z": "5c759330.d3c6e4",
+        "order": 3,
+        "group": "487470c6.ca6f2",
+        "width": "2",
+        "height": "1",
+        "label": "B DI15",
+        "labelPlacement": "right",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#2bffff",
+                "value": "1",
+                "valueType": "num"
+            },
+            {
+                "color": "#808040",
+                "value": "0",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "Signal B",
+        "x": 760,
+        "y": 400,
+        "wires": []
+    }
+]
