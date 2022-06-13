@@ -1,0 +1,7 @@
+(fp_lib_table
+  (lib (name CNY70)(type KiCad)(uri ${USRMOD}/CNY70)(options "")(descr ""))
+  (lib (name L78L12)(type KiCad)(uri ${USRMOD}/L78L12)(options "")(descr ""))
+  (lib (name Alps_EC12E)(type KiCad)(uri ${USRMOD}/Alps_EC12E)(options "")(descr ""))
+  (lib (name APEM_Multimec_5E)(type KiCad)(uri ${USRMOD}/APEM_Multimec_5E)(options "")(descr ""))
+  (lib (name BPW34_PDV-P8104_CombiShape)(type KiCad)(uri ${USRMOD}/BPW34_PDV-P8104_CombiShape)(options "")(descr ""))
+)

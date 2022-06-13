@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name CNY70)(type Legacy)(uri ${USRMOD}/CNY70/CNY70.lib)(options "")(descr ""))
+  (lib (name L78L12)(type Legacy)(uri ${USRMOD}/L78L12/L78L12.lib)(options "")(descr ""))
+)
